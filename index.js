@@ -7,7 +7,8 @@ function scuberGreetingForFeet(feet){
         return 'No can do.';
     }
 }
- console.log(sruberGreetingForFeet(199));
+
+console.log(scuberGreetingForFeet(199));
  console.log(scuberGreetingForFeet(2001));
  console.log(scuberGreetingForFeet(2501));
 
