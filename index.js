@@ -13,26 +13,22 @@ console.log(scuberGreetingForFeet(199));
  console.log(scuberGreetingForFeet(2501));
 
 
+const city = "NYC"
+let result;
+function ternaryCheckCity (city) {
 
-function ternaryCheckCity(city){
-    if (city === "NYC") {
-        return "Ok, sounds good.";
-    } else {
-        return "No go.";
-    }
+result = city === "NYC" ? "Ok, sounds good." : "No go."
+return result;
+
 }
-
-console.log(ternaryCheckCity("NYC"));
-console.log(ternaryCheckCity("Pittsburgh"));
 
 function switchOnCharmFromTip(tip){
-  if (tip === "generous") {
-    return "Thank you so much."
-  } else if (tip === "not as generous") {
-    return "Thank you."
-  } else return "Bye.";
+    switch (tip) {
+        case "generous":
+            return "Thank you so much."
+        case "not as generous":
+            return "Thank you."
+        default:
+            return "Bye."
+    }
 }
-
-console.log(switchOnCharmFromTip("generous"));
-console.log(switchOnCharmFromTip("not as generous"));
-console.log(switchOnCharmFromTip("Meagre"));
